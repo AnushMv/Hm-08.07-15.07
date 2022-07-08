@@ -1,0 +1,11 @@
+function empFullName(employees){
+    let newEmp = [];
+    for(let i = 0; i < employees.length; i++){
+        let firstName = employees[i].firstName;
+        let lastName = employees[i].lastName;
+        let fullName = firstName + ' ' + lastName;
+        newEmp.push(fullName);
+    }
+ 
+    return newEmp.toString();
+}
