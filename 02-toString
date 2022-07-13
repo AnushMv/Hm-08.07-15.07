@@ -1,0 +1,11 @@
+function salaryInfo(employees){
+    let newEmp = [];
+    for(let i = 0; i < employees.length; i++){
+        let email = employees[i].email;
+        let salary = employees[i].salary;
+        let info = ' ' + email + ': ' + salary;
+        newEmp.push(info);
+    }
+ 
+    return newEmp.toString();
+}
