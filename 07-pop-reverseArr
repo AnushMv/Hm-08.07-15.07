@@ -1,0 +1,9 @@
+function reverseArr(arr){
+    let newArr = [];
+    while(arr.length > 0){
+       newArr.push(arr[arr.length-1]);
+       arr.pop(arr[arr.length-1]);
+        
+    }
+   return newArr;
+}
