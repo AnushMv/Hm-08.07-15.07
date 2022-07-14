@@ -1,0 +1,16 @@
+function isPalindrom(str){
+    let strToArr = [];
+    let testArr = [];
+    for(let i = 0; i < str.length; i++){
+        strToArr.push(str[i]);
+    }
+    let copyOfArr = strToArr;
+    copyOfArr = copyOfArr.toString();
+    while(strToArr.length > 0){
+       testArr.push(strToArr[strToArr.length-1]);
+       strToArr.pop(strToArr[strToArr.length-1]);
+        
+    }
+    testArr = testArr.toString();
+    return testArr === copyOfArr;
+}
