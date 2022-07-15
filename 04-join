@@ -1,0 +1,8 @@
+function emailOfEmp(arr){
+  let empEmail = [];
+  for(let employ of arr){
+    empEmail.push(employ.email);
+  }
+  let result = empEmail.join("//");
+return result;
+}
