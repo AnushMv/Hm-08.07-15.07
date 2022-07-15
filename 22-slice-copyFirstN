@@ -1,0 +1,4 @@
+function getCopyOfArr(arr, n){
+  let result = arr.slice(0, n);
+  return result;
+}
