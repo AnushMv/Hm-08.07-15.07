@@ -1,0 +1,4 @@
+function getCloneOfArr(arr){
+  let cloneOfArr = arr.slice();
+  return clonefArr;
+}
