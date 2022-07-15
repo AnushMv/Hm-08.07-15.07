@@ -1,0 +1,13 @@
+function deleteDublic(arr){
+  let testArr = [].concat(arr);
+   for(let i = 0; i < arr.length; ){
+      if(testArr[i] === testArr[i+1]){
+          testArr.splice(i, 1);
+          i = i - ;
+          
+      } else{
+        i++
+      }
+  }
+  return testArr;
+}
