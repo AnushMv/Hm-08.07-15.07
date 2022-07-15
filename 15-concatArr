@@ -1,0 +1,20 @@
+function GetUniqConcatArr(arr1, arr2){
+   let concatedArr = arr1.concat(arr2);
+   let objOfItems = {};
+    for(let i = 0; i < concatedArr.length; i++){
+        let key = concatedArr[i];
+        if(objOfItems[key] === undefined){
+            objOfItems[key] = 1;
+        } else{
+            objOfItems[key]++;
+        }
+    }
+    let result = [];
+    for(let key in objOfItems){
+        if(objOfItems[key] === 1){
+            result.push(key);
+        }
+    }
+  return result;
+}
+
