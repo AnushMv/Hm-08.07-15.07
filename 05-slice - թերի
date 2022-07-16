@@ -1,0 +1,12 @@
+function emailOfEmp(arr) {
+  let empEmail = [];
+  let result;
+  let salary;
+  for (let employ of arr) {
+    empEmail.push(employ.email);
+    salary = employ.salary;
+    console.log(employ.salary)
+    result = empEmail.join(`: ${salary}, `);
+  }
+  return result;
+}
