@@ -1,0 +1,4 @@
+function sortNames(arr){
+  arr.sort((a,b) => a.firstName > b.firstName ? 1 : -1);
+  return arr;
+}
