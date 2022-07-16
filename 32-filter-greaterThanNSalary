@@ -1,0 +1,11 @@
+function getArrClone(arr, n) {
+  for (let employ of employees) {
+    let newSalary = employ.salary.split("");
+    newSalary.shift();
+    let newSalaryStr = newSalary.join('');
+    employ.salary = +newSalaryStr;
+  }
+  let clone = arr.filter((item) => item.salary > n);
+
+  return clone;
+}
