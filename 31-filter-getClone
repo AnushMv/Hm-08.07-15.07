@@ -1,0 +1,5 @@
+function getArrClone(arr){
+  let clone = arr.filter(item => item);
+  return clone;
+
+}
