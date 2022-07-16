@@ -1,0 +1,8 @@
+function findPalindrom(str){
+  let testStr = str.slice();
+  str = str.split('');
+  str.reverse();
+  let newStr = str.join('');
+  return newStr === testStr ? 'palindrom' : 'is not palindrom';
+
+}
