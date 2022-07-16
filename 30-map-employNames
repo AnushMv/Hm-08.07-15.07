@@ -1,0 +1,5 @@
+function getArrClone(arr){
+  let clone = arr.map(item => item.firstName)
+  return clone;
+
+}
