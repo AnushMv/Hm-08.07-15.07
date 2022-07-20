@@ -1,0 +1,7 @@
+function emails(emp){
+    let result = emp.reduce((email, item) => {email.concate(item.email);
+                            let res = email.join('//');
+                            return res;
+                                             }, []);
+    return result;
+}
