@@ -1,4 +1,4 @@
-function totalSalary(emp){
+function getTotalSalary(emp){
     for (let employ of emp) {
     let newSalary = employ.salary.split("");
     newSalary.shift();
