@@ -1,0 +1,10 @@
+function totalSalary(emp){
+    for (let employ of emp) {
+    let newSalary = employ.salary.split("");
+    newSalary.shift();
+    let newSalaryStr = newSalary.join('');
+    employ.salary = +newSalaryStr;
+  }
+    let result = emp.reduce((total, item) => total + item.salary, 0);
+    return result;
+}
